@@ -8,6 +8,8 @@ import FooterLayout from "./components/Footer";
 import Welcome from "./components/Welcome";
 import About from "./components/About";
 
+const { Content } = Layout;
+
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -16,10 +18,12 @@ const App = () => {
       <div className="App">
         <Layout>
           <HeaderLayout />
-          <Switch>
-            <Route path="/" exact component={Welcome}></Route>
-            <Route path="/about" component={About}></Route>
-          </Switch>
+          <Content>
+            <Switch>
+              <Route path="/" exact component={Welcome} />
+              <Route path="/about" component={About} />
+            </Switch>
+          </Content>
           <FooterLayout />
         </Layout>
       </div>

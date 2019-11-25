@@ -1,3 +1,21 @@
-.ant-menu-item.header-menu.ant-menu-item-selected {
+.header {
+  &__logo {
+    height: 80px;
+    margin: -8px 24px 16px 0;
+    float: left;
+  }
+
+  &__menu {
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    &__item {
+      &__text {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.ant-menu-item.header__menu__item.ant-menu-item-selected {
   background-color: transparent;
 }
