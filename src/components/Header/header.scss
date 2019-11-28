@@ -5,8 +5,41 @@
     float: left;
   }
 
+  &__toggle {
+    background-color: transparent;
+    margin-top: 17px;
+    float: right;
+    @media only screen and (max-width: 1024px) {
+    }
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }
+    :active {
+      background-color: transparent;
+    }
+
+    &__icon {
+      color: #ffffff;
+      font-size: 24px;
+    }
+  }
+
   &__menu {
     float: right;
+    font-family: "Montserrat", sans-serif;
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+    @media only screen and (min-width: 1024px) {
+    }
+    &__item {
+      &__text {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__drawer {
     font-family: "Montserrat", sans-serif;
     &__item {
       &__text {
@@ -18,4 +51,16 @@
 
 .ant-menu-item.header__menu__item.ant-menu-item-selected {
   background-color: transparent;
+}
+
+.ant-menu-item.header__drawer__item.ant-menu-item-selected {
+  background-color: transparent;
+}
+
+.ant-drawer-wrapper-body {
+  background-color: #001529;
+}
+
+.ant-drawer-close {
+  color: #ffffff;
 }
