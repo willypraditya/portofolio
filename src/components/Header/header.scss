@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   width: 100%;
+  background-color: #000000;
 
   &__logo {
     height: 80px;
@@ -24,15 +25,22 @@
 
   &__drawer {
     font-family: "Montserrat", sans-serif;
-    &__item {
-      &__text {
-        color: #ffffff;
+    &__menu {
+      background-color: #000000;
+      border: none;
+      &__item {
+        :active {
+          background-color: transparent;
+        }
+        &__text {
+          color: #ffffff;
+        }
       }
     }
   }
 }
 
-.ant-menu-item.header__drawer__item.ant-menu-item-selected {
+.ant-menu-item.header__drawer__menu__item.ant-menu-item-selected {
   background-color: transparent;
 }
 
@@ -55,7 +63,7 @@
 }
 
 .ant-drawer-wrapper-body {
-  background-color: #001529;
+  background-color: #000000;
 }
 
 .ant-drawer-close {
