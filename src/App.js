@@ -18,7 +18,7 @@ const App = () => {
       <div className="App">
         <Layout>
           <HeaderLayout />
-          <Content>
+          <Content style={{ marginTop: "64px" }}>
             <Switch>
               <Route path="/" exact component={Welcome} />
               <Route path="/about" component={About} />

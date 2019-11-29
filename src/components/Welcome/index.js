@@ -1,23 +1,15 @@
 import React from "react";
+import background from "../../assets/home-background.png";
 import logo from "../../assets/logo.svg";
 import "./welcome.scss";
 
 const Welcome = () => {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.orng"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+    <div className="home">
+      <div className="home__test">
+        <h1>testing</h1>
+      </div>
+    </div>
   );
 };
 

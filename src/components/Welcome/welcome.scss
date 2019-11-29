@@ -1,18 +1,16 @@
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
+.home {
+  z-index: 0;
+  height: 100vh;
+  position: relative;
+  margin: -2px 0px -2px -2px;
   background-color: #000000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  background-image: url("../../assets/home-background.png");
+  background-position: center center;
+  background-size: cover;
+  filter: blur(1.5px);
+  &__test {
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.5;
+  }
 }
