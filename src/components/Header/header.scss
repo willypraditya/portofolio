@@ -1,4 +1,7 @@
 .header {
+  position: fixed;
+  width: 100%;
+
   &__logo {
     height: 80px;
     margin: -8px 24px 16px 0;
@@ -9,11 +12,6 @@
     background-color: transparent;
     margin-top: 17px;
     float: right;
-    @media only screen and (max-width: 1024px) {
-    }
-    @media only screen and (min-width: 1024px) {
-      display: none;
-    }
     :active {
       background-color: transparent;
     }
@@ -21,21 +19,6 @@
     &__icon {
       color: #ffffff;
       font-size: 24px;
-    }
-  }
-
-  &__menu {
-    float: right;
-    font-family: "Montserrat", sans-serif;
-    @media only screen and (max-width: 1024px) {
-      display: none;
-    }
-    @media only screen and (min-width: 1024px) {
-    }
-    &__item {
-      &__text {
-        color: #ffffff;
-      }
     }
   }
 
@@ -49,12 +32,26 @@
   }
 }
 
-.ant-menu-item.header__menu__item.ant-menu-item-selected {
+.ant-menu-item.header__drawer__item.ant-menu-item-selected {
   background-color: transparent;
 }
 
-.ant-menu-item.header__drawer__item.ant-menu-item-selected {
-  background-color: transparent;
+.ant-drawer-body {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ant-drawer-content {
+  opacity: 0.85;
+}
+
+.ant-drawer-content-wrapper {
+  height: 100vh !important;
 }
 
 .ant-drawer-wrapper-body {
@@ -63,4 +60,16 @@
 
 .ant-drawer-close {
   color: #ffffff;
+  margin-left: -990px;
+}
+
+.anticon-close {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.ant-drawer-close:focus,
+.ant-drawer-close:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
