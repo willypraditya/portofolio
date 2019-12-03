@@ -12,11 +12,8 @@ const Welcome = () => {
       <div className="home__mask">
         <div className="home__background"></div>
       </div>
-      <Card title="LOREM IPSUM" className="home__card" bordered={false}>
-        <p className="home__card__center">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+      <Card title="WILLY PRADITYA" className="home__card" bordered={false}>
+        <p className="home__card__center">Front-End Web Developer</p>
         <p className="home__card__description">
           It has survived not only five centuries, but also the leap into
           electronic typesetting, remaining essentially unchanged. It was

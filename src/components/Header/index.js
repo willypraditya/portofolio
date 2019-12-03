@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Layout, Menu, Button, Icon, Drawer } from "antd";
 import "./header.scss";
-import logo from "../../assets/WP.png";
+import logo from "../../assets/WP.svg";
 
 const { Header } = Layout;
 
