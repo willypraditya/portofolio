@@ -1,16 +1,45 @@
 .home {
-  z-index: 0;
-  height: 100vh;
-  position: relative;
-  margin: -2px 0px -2px -2px;
-  background-color: #000000;
-  background-image: url("../../assets/home-background.png");
-  background-position: center center;
-  background-size: cover;
-  filter: blur(1.5px);
-  &__test {
+  &__mask {
     height: 100vh;
     background-color: #000000;
-    opacity: 0.5;
+  }
+
+  &__background {
+    z-index: 0;
+    height: 100vh;
+    position: relative;
+    margin: -4px 0px -4px -4px;
+    background-image: url("../../assets/home-background.png");
+    background-position: center top;
+    background-size: cover;
+    filter: blur(1px);
+    opacity: 0.3;
+  }
+
+  &__card {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    &__center {
+      color: #ffffff;
+      font-size: 46px;
+    }
+
+    &__description {
+      color: #848383;
+    }
+
+    .ant-card-head {
+      color: #ffffff;
+      font-size: 12px;
+      letter-spacing: 10px;
+      font-weight: 600;
+      border: 0px;
+    }
   }
 }

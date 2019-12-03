@@ -1,11 +1,11 @@
 .header {
   position: fixed;
   width: 100%;
-  background-color: #000000;
+  background-color: #0a0a0a;
   z-index: 1;
 
   &__logo {
-    height: 80px;
+    height: 0px;
     margin: -8px 24px 16px 0;
     float: left;
   }
@@ -27,7 +27,7 @@
   &__drawer {
     font-family: "Montserrat", sans-serif;
     &__menu {
-      background-color: #000000;
+      background-color: #0a0a0a;
       border: none;
       &__item {
         :active {
@@ -64,7 +64,7 @@
 }
 
 .ant-drawer-wrapper-body {
-  background-color: #000000;
+  background-color: #0a0a0a;
 }
 
 .ant-drawer-close {

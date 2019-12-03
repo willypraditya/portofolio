@@ -3,12 +3,29 @@ import background from "../../assets/home-background.png";
 import logo from "../../assets/logo.svg";
 import "./welcome.scss";
 
+import { Card } from "antd";
+const { Meta } = Card;
+
 const Welcome = () => {
   return (
     <div className="home">
-      <div className="home__test">
-        <h1>testing</h1>
+      <div className="home__mask">
+        <div className="home__background"></div>
       </div>
+      <Card title="LOREM IPSUM" className="home__card" bordered={false}>
+        <p className="home__card__center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <p className="home__card__description">
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+      </Card>
     </div>
   );
 };
