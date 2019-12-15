@@ -18,10 +18,10 @@ const App = () => {
       <div className="App">
         <Layout>
           <HeaderLayout />
-          <Content style={{ marginTop: "64px" }}>
+          <Content>
             <Switch>
               <Route path="/" exact component={Welcome} />
-              <Route path="/about" component={About} />
+              {/* <Route path="/about" component={About} /> */}
             </Switch>
           </Content>
           <FooterLayout />

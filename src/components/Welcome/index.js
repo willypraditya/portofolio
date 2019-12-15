@@ -1,29 +1,47 @@
 import React from "react";
-import background from "../../assets/home-background.png";
-import logo from "../../assets/logo.svg";
+import reactLogo from "../../assets/react-logo.svg";
+import webpackLogo from "../../assets/webpack-logo.svg";
+import vscodeLogo from "../../assets/vscode-logo.svg";
+import sassLogo from "../../assets/sass-logo.svg";
+
 import "./welcome.scss";
 
-import { Card } from "antd";
-const { Meta } = Card;
+import { Card, Layout, Row, Col } from "antd";
+
+const { Content } = Layout;
 
 const Welcome = () => {
   return (
-    <div className="home">
-      <div className="home__mask">
-        <div className="home__background"></div>
+    <Content>
+      <div className="home">
+        <div className="home__mask">
+          <div className="home__background"></div>
+        </div>
+        <Card className="home__card" title="WILLY PRADITYA" bordered={false}>
+          <p className="home__card__center">Front End Developer</p>
+          <p className="home__card__description">
+            A Student, currently working at PT. Payfazz Teknologi Nusantara,
+            interested in techs.
+          </p>
+        </Card>
       </div>
-      <Card title="WILLY PRADITYA" className="home__card" bordered={false}>
-        <p className="home__card__center">Front-End Web Developer</p>
-        <p className="home__card__description">
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.
-        </p>
+      <Card className="home__tools" title="Development Tools" bordered={false}>
+        <Row type="flex" justify="space-around">
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <img className="home__tools__vscode" src={vscodeLogo} />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <img className="home__tools__react" src={reactLogo} />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <img className="home__tools__webpack" src={webpackLogo} />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <img className="home__tools__sass" src={sassLogo} />
+          </Col>
+        </Row>
       </Card>
-    </div>
+    </Content>
   );
 };
 
