@@ -25,7 +25,8 @@ const Welcome = () => {
           </p>
         </Card>
       </div>
-      <Card className="home__tools" title="Development Tools" bordered={false}>
+      <Card className="home__tools" bordered={false}>
+        <p className="home__tools__title">Development Tools</p>
         <Row type="flex" justify="space-around">
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <img className="home__tools__vscode" src={vscodeLogo} />

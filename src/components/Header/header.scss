@@ -71,12 +71,19 @@
 
 .ant-drawer-close {
   color: #ffffff;
-  margin-left: -990px;
 }
 
 .anticon-close {
   margin-top: 20px;
   font-size: 24px;
+
+  @media only screen and (min-width: 700px) {
+    margin-left: -100px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    margin-left: -30px;
+  }
 }
 
 .ant-drawer-close:focus,
