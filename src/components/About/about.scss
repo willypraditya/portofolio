@@ -1,0 +1,71 @@
+.about {
+  background-color: #121212;
+  border-radius: 0px;
+  text-align: center;
+  // height: 100vh;
+
+  &__title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: -10px;
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 50px;
+      padding-top: 5px;
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+
+  &__description {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: left;
+    @media only screen and (min-width: 1600px) {
+      margin-top: 5px;
+    }
+    @media only screen and (min-width: 1600px) {
+      margin-left: 50px;
+    }
+    @media only screen and (max-width: 1600px) {
+      margin-top: 30px;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .ant-card-head {
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    border: 0px;
+    text-align: center;
+  }
+
+  &__tools {
+    &__vscode {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    &__react {
+      margin-top: -10px;
+      margin-bottom: 10px;
+      width: 170px;
+    }
+    &__webpack {
+      margin-bottom: 10px;
+      width: 100px;
+    }
+    &__sass {
+      margin-bottom: 10px;
+      width: 120px;
+    }
+  }
+}

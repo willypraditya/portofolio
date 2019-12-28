@@ -5,7 +5,7 @@ import "./index.scss";
 
 import HeaderLayout from "./components/Header";
 import FooterLayout from "./components/Footer";
-import Welcome from "./components/Welcome";
+import Home from "./components/Home";
 import About from "./components/About";
 
 const { Content } = Layout;
@@ -20,7 +20,7 @@ const App = () => {
           <HeaderLayout />
           <Content>
             <Switch>
-              <Route path="/" exact component={Welcome} />
+              <Route path="/" exact component={Home} />
               {/* <Route path="/about" component={About} /> */}
             </Switch>
           </Content>
