@@ -24,8 +24,8 @@ const App = () => {
           <HeaderLayout />
           <Content>
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Redirect to="/" />
+              <Route path="/portofolio" exact component={Home} />
+              <Redirect to="/portofolio" />
             </Switch>
           </Content>
           <FooterLayout />
