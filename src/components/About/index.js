@@ -18,7 +18,7 @@ const About = () => {
         <Row type="flex" justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={2}>
             <Avatar
-              style={{ filter: "grayscale(100%)" }}
+              className="about__picture"
               shape="square"
               size={150}
               src={profilePicture}

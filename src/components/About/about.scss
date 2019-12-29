@@ -20,6 +20,10 @@
     }
   }
 
+  &__picture {
+    filter: grayscale(100%);
+  }
+
   &__description {
     color: #ffffff;
     font-size: 20px;
