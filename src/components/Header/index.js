@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { Layout, Menu, Button, Icon, Drawer } from "antd";
+import { Layout, Menu, Button, Drawer } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 import "./header.scss";
 import logo from "../../assets/WP.svg";
 
@@ -10,14 +11,14 @@ const HeaderLayout = () => {
   const [showDrawer, setShowDrawer] = useState(false);
 
   const onClickDrawer = () => {
-    setShowDrawer(prevState => !prevState);
+    setShowDrawer((prevState) => !prevState);
   };
 
   return (
     <Header className="header">
       <img className="header__logo" src={logo}></img>
       <Button className="header__toggle" type="link" onClick={onClickDrawer}>
-        <Icon className="header__toggle__icon" type="menu"></Icon>
+        <MenuOutlined className="header__toggle__icon" />
       </Button>
       <Drawer
         placement="top"

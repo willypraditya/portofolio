@@ -6,15 +6,14 @@
   }
 
   &__background {
-    z-index: 0;
-    height: 100vh;
-    position: relative;
     margin: -4px 0px -4px -4px;
-    background-image: url("../../assets/home-background.jpg");
-    background-position: center top;
-    background-size: cover;
     filter: blur(2.5px);
     opacity: 0.3;
+    &__image {
+      height: 100vh;
+      object-fit: none;
+      object-position: left center;
+    }
   }
 
   &__card {

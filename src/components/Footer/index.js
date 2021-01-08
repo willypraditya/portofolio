@@ -1,5 +1,11 @@
 import React from "react";
-import { Layout, Row, Col, Icon } from "antd";
+import { Layout, Row, Col } from "antd";
+import {
+  LinkedinOutlined,
+  GithubOutlined,
+  InstagramOutlined,
+} from "@ant-design/icons";
+
 import "./footer.scss";
 
 const { Footer } = Layout;
@@ -17,21 +23,21 @@ const FooterLayout = () => (
             href="https://www.linkedin.com/in/willy-praditya/"
             target="_blank"
           >
-            <Icon type="linkedin" />
+            <LinkedinOutlined />
           </a>
           <a
             className="footer__row__right__contact__social-media"
             href="https://github.com/willypraditya"
             target="_blank"
           >
-            <Icon type="github" />
+            <GithubOutlined />
           </a>
           <a
             className="footer__row__right__contact__social-media"
             href="https://www.instagram.com/willypraditya"
             target="_blank"
           >
-            <Icon type="instagram" />
+            <InstagramOutlined />
           </a>
         </div>
       </Col>

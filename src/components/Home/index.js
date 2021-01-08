@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "../About";
 import "./home.scss";
+import Background from "../../assets/home-background.jpg";
 
 import Typed from "react-typed";
-import { Card, Layout } from "antd";
+import { Card, Layout, Image, Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
 import { Element } from "react-scroll";
 
 const { Content } = Layout;
 
-const Home = () => {
+const Home = ({ setLoading }) => {
   const typed = () => {
     return (
       <Typed
@@ -25,7 +27,14 @@ const Home = () => {
       <Content>
         <div className="home">
           <div className="home__mask">
-            <div className="home__background" />
+            <div className="home__background">
+              <Image
+                className="home__background__image"
+                src={Background}
+                preview={false}
+                onLoad={setLoading(false)}
+              />
+            </div>
           </div>
           <Card className="home__card" bordered={false}>
             {/* <Flip left cascade> */}

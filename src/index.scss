@@ -30,3 +30,16 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #0a0a0a;
 }
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  background-color: black
+}
+
+.loading-icon {
+  font-size: 48px;
+  color: white;
+  top: 50%;
+}
