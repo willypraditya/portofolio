@@ -2,7 +2,6 @@ import React from "react";
 import About from "../About";
 import "./home.scss";
 
-import Flip from "react-reveal/Flip";
 import Typed from "react-typed";
 import { Card, Layout } from "antd";
 import { Element } from "react-scroll";
@@ -26,7 +25,7 @@ const Home = () => {
       <Content>
         <div className="home">
           <div className="home__mask">
-            <div className="home__background"></div>
+            <div className="home__background" />
           </div>
           <Card className="home__card" bordered={false}>
             {/* <Flip left cascade> */}

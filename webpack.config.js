@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index_bundle.js"
+    filename: "index_bundle.js",
   },
   module: {
     rules: [
@@ -14,34 +14,34 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: "babel-loader",
+        },
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           "css-loader",
-          "sass-loader"
-        ]
+          "sass-loader",
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
-      }
-    ]
+        use: ["file-loader"],
+      },
+    ],
   },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css",
-      ignoreOrder: false
-    })
-  ]
+      ignoreOrder: false,
+    }),
+  ],
 };
