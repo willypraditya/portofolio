@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import About from "../About";
 import "./home.scss";
 import Background from "../../assets/home-background.jpg";
 
 import Typed from "react-typed";
-import { Card, Layout, Image, Spin } from "antd";
-import { LoadingOutlined } from "@ant-design/icons";
+import { Card, Layout, Image } from "antd";
 import { Element } from "react-scroll";
 
 const { Content } = Layout;
@@ -32,18 +31,16 @@ const Home = ({ setLoading }) => {
                 className="home__background__image"
                 src={Background}
                 preview={false}
-                onLoad={setLoading(false)}
+                onLoad={() => setLoading(false)}
               />
             </div>
           </div>
           <Card className="home__card" bordered={false}>
-            {/* <Flip left cascade> */}
             <p className="home__card__title">WILLY PRADITYA</p>
             <p className="home__card__center">Front End Developer</p>
             <p className="home__card__description">
               A Student, interested in {typed()}
             </p>
-            {/* </Flip> */}
           </Card>
         </div>
         <About />
