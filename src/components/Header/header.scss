@@ -33,7 +33,7 @@
       &__item {
         margin-bottom: 30px !important;
         :active {
-          background-color: transparent;
+          background-color: #0a0a0a !important;
         }
         &__text {
           color: #ffffff;
@@ -44,6 +44,10 @@
       }
     }
   }
+}
+
+.ant-menu-item:active {
+  background-color: transparent;
 }
 
 .ant-menu-item.header__drawer__menu__item.ant-menu-item-selected {
@@ -77,15 +81,14 @@
 }
 
 .anticon-close {
-  margin-top: 20px;
   font-size: 24px;
 
   @media only screen and (min-width: 768px) {
-    margin-left: -100px;
+    margin-left: -115px;
   }
 
   @media only screen and (max-width: 768px) {
-    margin-left: -30px;
+    margin-left: -50px;
   }
 }
 
