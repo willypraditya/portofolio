@@ -32,11 +32,11 @@ const App = () => {
           <Content>
             <Switch>
               <Route
-                path="/portofolio"
+                path="/"
                 exact
                 render={() => <Home setLoading={setLoading} />}
               />
-              <Redirect to="/portofolio" />
+              <Redirect to="/" />
             </Switch>
           </Content>
           <FooterLayout />
